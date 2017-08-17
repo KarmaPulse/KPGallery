@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode8.1
+script:
+- xcrun xcodebuild -project KPGallery.xcodeproj -scheme KPGallery-macOS test
+- xcrun xcodebuild -project KPGallery.xcodeproj -scheme KPGallery-iOS
+- xcrun xcodebuild -project KPGallery.xcodeproj -scheme KPGallery-watchOS
+- xcrun xcodebuild -project KPGallery.xcodeproj -scheme KPGallery-tvOS
+- swift test
+after_success: bash <(curl -s https://codecov.io/bash)

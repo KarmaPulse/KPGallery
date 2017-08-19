@@ -1,6 +1,8 @@
 # KPGallery
 
-![License](https://img.shields.io/github/license/KarmaPulse/KPGallery.svg?style=flat)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Swift](https://img.shields.io/badge/swift-3.0-orange.svg)
+[![KPGallery](https://img.shields.io/badge/downloads-0-orange.svg)]()
 
 ![alt text](https://github.com/KarmaPulse/KPGallery/blob/master/KPGalleryHeader.png "KPGallery")
 
@@ -14,15 +16,19 @@ Cross-Platform gallery with awesome visualizations, completely customizable,  an
     macOS 10.9+
 
 
-
 ## Visualizations
 
 #### Grid
+A normal grid like the style you know.
 #### Auto
+A completely unattended gallery with beatifull animations for visualize your data.
 #### Masonry
+A pinterest gallery style with dinamic heights.
 
 
 ## Installation
+    pod install KPGallery
+
 
 ## Usage
 

@@ -2,11 +2,12 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Swift](https://img.shields.io/badge/swift-3.0-orange.svg)
-[![KPGallery](https://img.shields.io/badge/downloads-0-orange.svg)]()
+![KPGallery](https://img.shields.io/badge/downloads-0-orange.svg)
 
-![alt text](https://github.com/KarmaPulse/KPGallery/blob/master/KPGalleryHeader.png "KPGallery")
+![KPGalleryLogo](https://github.com/KarmaPulse/KPGallery/blob/master/KPGalleryHeader.png?raw=true)
 
-Cross-Platform gallery with awesome visualizations, completely customizable,  and can be used in any  *iOS*, *tvOS*, *macOS* app. Actually used internally for our apps at **KarmaPulse**.
+
+Cross-Platform gallery with awesome visualizations, completely customizable,  and can be used in any  *iOS*, *tvOS*, *macOS* app. Actually used internally in our apps at **KarmaPulse**.
 
 #### Requirements
     Xcode 8.3+

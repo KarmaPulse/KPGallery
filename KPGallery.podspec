@@ -10,8 +10,8 @@ Pod::Spec.new do |spec|
     spec.author       = { "Jose Garfias Lopez" => "jose@karmapulse.com" }
     spec.homepage     = 'http://karmapulse.com'
     spec.license      = { :type => 'MIT', :file => 'LICENSE.md' }
-    spec.source       = { :path => '.' }
+    spec.source       = { :path => 'https://github.com/KarmaPulse/KPGallery.git' }
     spec.source_files = 'Sources/*.swift'
     spec.social_media_url = 'https://twitter.com/garfiaslopez'
-    #spec.documentation_url = 'http://Karmapulse.com/KPGallery/api/'
+    spec.documentation_url = 'https://github.com/KarmaPulse/KPGallery/wiki'
 end

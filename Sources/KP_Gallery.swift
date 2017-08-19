@@ -8,19 +8,35 @@
 
 import UIKit
 
+/// The UIView class' KP_Gallery wraps every visualization type of the gallery based on configurations.
+
 public class KP_Gallery: UIView {
     
     public var mode = "auto";
     public var images:[gallery_image] = [];
+    public var errorMessages: [String:String] = ["":""];
 
+
+    /// The UIView class' KP_Gallery wraps every visualization type of the gallery based on configurations
+    ///
+    /// - Parameters:
+    ///   - frame: An CGRect to be used to fit the gallery on the screen.
+    ///   - images: An [gallery_image] Data Array for render on gallery.
+    ///   - mode: mode An String Type of gallery.
+    
     public init (frame : CGRect, images: [gallery_image], mode: String) {
         super.init(frame : frame);
         // Init Vars
         self.images = images;
         self.mode = mode;
+        self.errorMessages = ["":""];
         
         // Load & Construct Views
-        self.reloadView();
+        if (self.validateData()) {
+            self.reloadView();
+        }else {
+            self.loadErrorView();
+        }
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -32,10 +48,6 @@ public class KP_Gallery: UIView {
     }
     
     public func reloadView() {
-        print("ON RELOAD VIEW");
-        print(self.mode);
-        
-        
         switch self.mode {
         case "auto":
             self.loadAutoModeGallery();
@@ -47,14 +59,23 @@ public class KP_Gallery: UIView {
             self.loadAutoModeGallery();
         }
     }
-   
     
+    func validateData() -> Bool {
+        return true;
+    }
+    
+    func loadErrorView() {
+        
+    }
+
+    /// Load the AUTO MODE (Animation standalone).
     func loadAutoModeGallery() {
         
     }
     
     
     func loadGridModeGallery() {
+        //Init the KP_Grid.
         let f = CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height);
         let grid = KP_Grid(frame: f);
         self.addSubview(grid);
